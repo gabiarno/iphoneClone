@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: rgb(0 0 0 / 80%);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+
+
+a{text-decoration: none;}
+
+nav a{
+    color: white;
+}
+.shop-online{
+    text-align: center;
+    background-color: #fbfbfd;
+    color: #1d1d1f;
+    font-size: small;
+    padding: 1em;
+}
+
+.shop-online span{
+    color: #06c;
+}
+
+.full-width-section{
+width: 100%;
+height: 620px;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+margin-bottom: 10px;
+flex-direction: column;
+padding-top: 40px;
+align-items: center;
+}
+
+.full-width-section div{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width-section a{
+    color: blue;
+}
+
+.iphone{
+    background-image: url("../images/hero_iphone_13pro.jpg");
+
+}
+
+.watch{
+    background: url("../images/hero_watch__f05go333pz2i_small.jpg");
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.movie{
+    background: url("../images/hero_ttom__d8cc7msuzey6_largetall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.multi{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.multi article{
+    height: 520px;
+    width: 602px;
+    margin-bottom: 20px;
+    background-position: center;
+}
+
+.valentine{
+    background-image: url("../images/promo_vday22__oz9b5x4x7ney_small.jpg");
+}
+
+.iphone13{
+    background-image: url("../images/tile_iphone_13__d9w82q7fwceq_medium.jpg");
+}
+.macro-photo{
+    background-image: url("../images/tile_soip__f0c6lef982em_small.jpg");
+}
+.watches{
+    background-image: url("../images/promo_watch_heart__dlf8uc5h0kae_small.jpg");
+}
+
+/*media queries*/
+
+@media screen and (max-width:475px){
+    .multi{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .multi article{
+        width: 100%;
+    }
+    .iphone{
+        background-image: url("");
+    }
+    .full-width-section{
+        background-position: cover;
+    }
+    .watch{
+        background-image: url("");
+    }
+    nav li{
+        display:none;
+    }
+    
+    nav li.show-small-screen{
+        display: block;
+    }
+    
+}
