@@ -9,6 +9,25 @@ header{
     background: rgb(0 0 0 / 80%);
 }
 
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+h1.white{
+    color: white;
+}
+
+h2{
+    font-weight: 400;
+    letter-spacing: .004em;
+    text-align: center;
+}
+
+h2.pink{
+    color: #fec2eb;
+}
+
 nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -20,15 +39,39 @@ nav ul{
     margin-left: 15em;
 }
 
+.iphone-links{
+    display: flex;
+    justify-content: center;
+}
 
+.h1-small{
+    font-size: 40px;
+    margin: 0 3em;
+}
+.h2-small{
+    font-size: 21px;
+    margin: 0 3em;
+}
+
+.bright-blue{
+    color: #2997ff;
+    margin: 1em;
+}
+
+.black{
+    color: black;
+    margin: 1em;
+}
+
+.purple{
+    color: #602d62;
+}
 
 .search{
     height: 30px;
 }
 
-.movie{
-    color: white;
-}
+
 
 a{text-decoration: none;}
 
@@ -145,6 +188,31 @@ justify-content: space-around;
     
     nav li.show-small-screen{
         display: block;
+    }
+
+    nav ul{
+        width: 100%;
+    margin-left: 0em;
+
+
+
+    }
+    h1{
+        text-align: center;
+    }
+
+    .h1-small{
+        margin: 16px;
+        font-size: 31px;
+    }
+    .h2-small{
+        margin: 16px;
+    }
+    .vertical-center{
+        padding-top: 6em;
+    }
+    article{
+        justify-content: center;
     }
     
 }
