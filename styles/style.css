@@ -15,9 +15,20 @@ nav ul{
     list-style: none;
     align-items: center;
     color: white;
+    font-size: 12px;
+    width: 80%;
+    margin-left: 15em;
 }
 
 
+
+.search{
+    height: 30px;
+}
+
+.movie{
+    color: white;
+}
 
 a{text-decoration: none;}
 
@@ -38,7 +49,7 @@ nav a{
 
 .full-width-section{
 width: 100%;
-height: 620px;
+height: 520px;
 background-position: center;
 background-repeat: no-repeat;
 display: flex;
@@ -55,12 +66,17 @@ align-items: center;
 }
 
 .full-width-section a{
-    color: blue;
-}
+         color: #06c; 
+        margin-top: 2em;
+        size: 21px;
+    }
+    
+    
+
 
 .iphone{
-    background-image: url("../images/hero_iphone_13pro.jpg");
-
+    background-image: url("../images/hero_iphone_13pro__dhnsegysa42u_largetall.jpg");
+    background-size: 3010px 736px;
 }
 
 .watch{
@@ -94,7 +110,7 @@ justify-content: space-around;
 }
 
 .iphone13{
-    background-image: url("../images/tile_iphone_13__d9w82q7fwceq_medium.jpg");
+    background-image: url("../images/hero_iphone_13__f194u1rdooeq_largetall.jpg");
 }
 .macro-photo{
     background-image: url("../images/tile_soip__f0c6lef982em_small.jpg");
@@ -106,23 +122,22 @@ justify-content: space-around;
 /*media queries*/
 
 @media screen and (max-width:475px){
-    .multi{
-        flex-direction: column;
-    }
-    nav ul{
-        flex-direction: column;
-    }
+    
     .multi article{
         width: 100%;
     }
     .iphone{
-        background-image: url("");
+        background-image: url("../images/hero_iphone_13pro.jpg");
     }
     .full-width-section{
         background-position: cover;
+        background-size: cover;
     }
     .watch{
-        background-image: url("");
+        background-image: url("../images/hero_watch__f05go333pz2i_small.jpg");
+    }
+    .iphone13{
+        background-image: url("../images/tile_iphone_13__d9w82q7fwceq_medium.jpg");
     }
     nav li{
         display:none;
